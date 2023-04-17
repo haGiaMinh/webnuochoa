@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>Dangnhap</title>
+	<script Language="javascript">
+		function KiemTraThongTin(){
+			var dangnhap=document.getElementById("dangnhap");
+			if (dangnhap.value==""){
+				alert("vui long nhap tai khoan");
+				dangnhap.focus();
+				return false;
+			}
+			var matkhau=document.getElementById("matkhau");
+			if (matkhau.value==""){
+				alert("vui long nhap mat khau");
+				matkhau.focus();
+				return false;
+			}
+			alert("Đăng nhập thành công! Xin chúc mừng.");
+			 return true;
+
+		}
+		
+	</script>
+<style>
+*{
+background-color:#696969;
+ margin-left: auto;
+ margin-right: auto;
+ 
+}
+table{
+ padding-top: 250px;
+  padding-bottom: 80px;
+}
+</style>
+    
+</head>
+<body><form action="#" name="dangnhap"method="post">
+<table>
+
+	<tr><td colspan="2"><h3 align="center">ĐĂNG NHẬP</h3></td></tr>
+<tr><td>Tên đăng nhập:</td><td><input id="dangnhap" type="text" name="username"></td></tr>
+     <tr><td>Mật Khẩu:</td><td><input id="matkhau" type="password" name="password"></td></tr>
+     <tr><td colspan="2"><p align="center"><a href=web.html><button id="submit" type="button" onClick="return KiemTraThongTin()" >Đăng nhập</button></a></p></td></tr>
+     <tr><td><a href=Dangky.html><b><i>Đăng Kí</i></b></a></td></tr>
+  </table>   
+</form>
+</body>
+</html>
